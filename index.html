@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação de Países</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🌍 Qual é o País?</h1>
+        <p class="subtitle">Adivinhe o país com base na dica!</p>
+
+        <div class="score-board">
+            <span>Pontuação de Acertos: <strong id="score">0</strong></span>
+        </div>
+
+        <div class="tip-box">
+            <p><strong>Dica:</strong> <span id="tipText">Carregando dica...</span></p>
+        </div>
+
+        <div class="game-box">
+            <p class="question-text">Qual o país?</p>
+            <input type="text" id="userGuess" placeholder="Digite o nome do país..." autocomplete="off">
+            <button id="guessButton">Enviar Resposta</button>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <button id="nextButton" class="hidden">Próxima Rodada</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
